@@ -1,5 +1,7 @@
-<%@page import="com.java.dao.Board"%>
-<%@page import="com.java.dao.BoardDao"%>
+<!-- 이것도 직접 실행은 안되고 notice_list에서 클릭했을 때 진행이 됨 -->
+
+<%@page import="com.java.www.Board"%>
+<%@page import="com.java.www.BoardDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -40,7 +42,7 @@
 
     <div class="nav-menu">
       <ul>
-        <li>COOKIT소개</li>
+        <li>COOKIT소개</li> 
         <li>COOKIT 메뉴</li>
         <li>리뷰</li>
         <li>이벤트</li>
