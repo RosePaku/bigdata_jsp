@@ -3,7 +3,7 @@
 notice_write를 통해 실행하는 것
  -->
 
-<%@page import="java.io.*, com.oreilly.servlet.multipart.*, com.oreilly.servlet.*, com.java.www.BoardDao"%>
+<%@page import="java.io.*, com.oreilly.servlet.multipart.*, com.oreilly.servlet.*,com.java.www.BoardDao"%>
 <%@page import="com.java.www.BoardDao"%>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>
