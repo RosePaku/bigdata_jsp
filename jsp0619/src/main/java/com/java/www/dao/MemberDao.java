@@ -1,4 +1,4 @@
-package com.java.www;
+package com.java.www.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,6 +37,7 @@ public class MemberDao {
 	//로그인 확인 메소드 - 성공:1, 실패:0
 	public Member selectLogin(String userId,String userPw) {
 		System.out.println("userId : "+userId);
+		System.out.println("userPw : "+userPw);
 		Member member = null;
 		try{
 	    	 conn = getConnection();
@@ -151,12 +152,15 @@ public class MemberDao {
 	public int insertMember(Member member) {
 		try{
 	    	 conn = getConnection();
-	    	 query = "insert into member values(?,?,?,?)";
+	    	 query = "insert into member values(?,?,?,?,?,?)";
 	    	 pstmt = conn.prepareStatement(query);
 	    	 pstmt.setString(1, member.getId());
 	    	 pstmt.setString(2, member.getPw());
 	    	 pstmt.setString(3, member.getName());
 	    	 pstmt.setString(4, member.getPhone());
+	    	 pstmt.setNull(5, java.sql.Types.VARCHAR); // gender 널값 
+	    	 pstmt.setNull(6, java.sql.Types.VARCHAR); // hobby 널값
+	    	 
 	    	 
 	    	 //성공-1, 실패-0
 	    	 result = pstmt.executeUpdate(); //executeUpdate()-insert,update,delete   executeQuery()-select

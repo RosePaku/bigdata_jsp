@@ -15,7 +15,7 @@
 	    <a href="j0619_login.jsp"><li>로그인</li></a>
 	  <%}else{%>
 	     <h3><%=(String) session.getAttribute("sessionName") %>님 환영합니다.</h3>
-	    <a href="j0619_memberList.jsp"><li>회원정보리스트</li></a>
+	    <a href="j0619_memberlist.jsp"><li>회원정보리스트</li></a>
 	    <a href="j0619_logout.jsp"><li>로그아웃</li></a>
 	    <a href="j0619_modify.jsp"><li>회원정보수정</li></a>
 	     <a href="boardList.jsp"><li>게시판</li></a>

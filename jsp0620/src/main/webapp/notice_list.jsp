@@ -1,5 +1,5 @@
-<%@page import="com.java.www.Board"%>
-<%@page import="com.java.www.BoardDao"%>
+<%@page import="com.java.dao.Board"%>
+<%@page import="com.java.dao.BoardDao"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

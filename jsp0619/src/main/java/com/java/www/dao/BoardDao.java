@@ -1,4 +1,4 @@
-package com.java.www;
+package com.java.www.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,4 +1,4 @@
-package com.java.www;
+package com.java.www.dao;
 
 public class Member {
 	

@@ -1,4 +1,4 @@
-package com.java.www;
+package com.java.www.dao;
 
 import java.util.Date;
 
